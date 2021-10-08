@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p, a {
+    font-size: 1.6rem;
+    color: hsl(224, 23%, 55%);
+}
+
+/* main */
+
+main {
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/pattern-background-desktop.svg") no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    background-position-y: -80px;
+}
+
+/* card */
+
+.summary-order {
+    width: 380px;
+    height: 600px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.summary-order__info {
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-order__description{
+    text-align: center;
+}
+
+.summary-order__description h2 {
+    margin-bottom: 2rem;
+    color: hsl(223, 47%, 23%);
+}
+
+/* plan section */
+
+.summary-order-plan {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0px;
+}
+
+.summary-order-plan h3{
+    color: hsl(223, 47%, 23%)
+}
+
+.summary-order-plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.summary-order-plan a:hover{
+    color: hsl(245, 67%, 64%);
+    text-decoration: none;
+}
+
+
+/* plan section -- buttons */
+
+#submit-btn{
+    width: 310px;
+    padding: 10px;
+    margin-top: -30px;
+    border-radius: 8px;
+    border: 0;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 15px  hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    background-color: hsl(245, 67%, 64%);
+    box-shadow:  hsl(245, 67%, 64%);
+}
+
+
+#cancel-btn {
+    margin: 20px;
+    font-weight: 700;
+}
+
+#cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+
+
+
